@@ -1,0 +1,40 @@
+ADMIN:
+username: boss
+password: admin
+USER:
+username: user
+password: kasir
+
+1. Tujuan Proyek
+Proyek ini bertujuan untuk mengembangkan sistem kasir untuk usaha kopi yang memungkinkan pengguna (admin) untuk mengelola data barang, transaksi, dan pembelian. Sistem ini dirancang untuk mempermudah pengelolaan penjualan dan inventaris kopi.
+
+2. Fitur Utama
+Autentikasi Pengguna: Pengguna dapat masuk ke sistem menggunakan username dan password. Hanya pengguna dengan peran 'admin' yang dapat mengakses halaman admin.
+Manajemen Data Barang: Admin dapat menambah, mengedit, dan menghapus data barang (jenis kopi) dalam sistem.
+Manajemen Transaksi: Admin dapat mencatat transaksi penjualan kopi, termasuk nama pembeli, jenis kopi, jumlah, dan total harga.
+Pencarian Data: Fitur pencarian yang memungkinkan admin untuk mencari data transaksi atau barang berdasarkan nama.
+Statistik Penjualan: Menampilkan diagram pembelian kopi berdasarkan jenis kopi yang terjual, memberikan wawasan kepada admin mengenai penjualan.
+Profil Pengguna: Halaman profil yang menampilkan informasi pengguna dan memungkinkan pengunggahan gambar profil.
+
+3. Teknologi yang Digunakan
+Bahasa Pemrograman: PHP untuk pengembangan sisi server.
+Database: MySQL untuk penyimpanan data, termasuk tabel untuk barang, transaksi, dan pengguna.
+Frontend: HTML, CSS (Tailwind CSS) untuk membuat tampilan yang responsif dan menarik.
+JavaScript: Untuk interaksi pengguna dan manipulasi DOM, termasuk konfirmasi penghapusan dan toggle dropdown.
+Chart.js: Untuk visualisasi data penjualan dalam bentuk grafik.
+
+4. Struktur Proyek
+Folder php/: Menyimpan semua file PHP yang menangani logika aplikasi, termasuk koneksi database, pengelolaan barang dan transaksi, serta autentikasi pengguna.
+Folder gambar/: Menyimpan gambar yang digunakan dalam aplikasi, seperti logo dan gambar profil.
+Folder uploads/: Menyimpan gambar yang diunggah oleh pengguna, seperti gambar profil.
+
+5. Rekomendasi untuk Pengembangan Lebih Lanjut
+Keamanan: Implementasikan hashing untuk password menggunakan password_hash() dan password_verify() untuk meningkatkan keamanan.
+Validasi Input: Tambahkan validasi input yang lebih ketat untuk mencegah kesalahan dan serangan SQL injection.
+Fitur Laporan: Tambahkan fitur laporan yang memungkinkan admin untuk menghasilkan laporan penjualan berdasarkan periode tertentu.
+Notifikasi: Implementasikan sistem notifikasi untuk memberikan umpan balik kepada pengguna setelah melakukan tindakan (misalnya, berhasil menambah atau menghapus data).
+Responsif Mobile: Pastikan antarmuka pengguna responsif dan dapat diakses dengan baik di perangkat mobile.
+Pengujian: Lakukan pengujian menyeluruh untuk memastikan semua fitur berfungsi dengan baik dan tidak ada bug.
+
+6. Kesimpulan
+Proyek sistem kasir kopi ini merupakan langkah awal dalam membangun aplikasi yang dapat membantu dalam pengelolaan usaha kopi. Dengan fitur-fitur yang ada, diharapkan sistem ini dapat meningkatkan efisiensi dan efektivitas dalam menjalankan bisnis kopi. Pengembangan lebih lanjut dan peningkatan fitur akan membuat sistem ini lebih komprehensif dan bermanfaat bagi pengguna.
